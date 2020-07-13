@@ -1,7 +1,9 @@
 def print_name(array)
   array.each do |name|
-    puts "Hi, #{name}"
+    if name.start_with?("T")
+      puts "Hi, #{name}"
+    end
   end
 end
 
-print_name(["nasrin","fari","mateen"])
+print_name(["nasrin","Tari","mateen"])
