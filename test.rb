@@ -1,7 +1,7 @@
-def make_salad
-  yield "lettece"
-  yield "tomato"
-  yield "olive oil"
+def print_name(array)
+  array.each do |name|
+    puts "Hi, #{name}"
+  end
 end
 
-make_salad {|ingredient| puts "Adding #{ingredient} to salad!"}
+print_name(["nasrin","fari","mateen"])
